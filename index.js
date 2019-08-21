@@ -23,7 +23,7 @@ const createReservesIcal = function(res) {
           summary: reserve.fullTitle,
           description: reserve.detail,
           location: reserve.channel.name,
-          url: process.env.CHINACHU_HOST + '/#!/program/view/id=' + reserve.id
+          url: process.env.CHINACHU_WUI_HOST + '/#!/program/view/id=' + reserve.id
         });
       });
       cal.serve(res);
@@ -51,7 +51,7 @@ const createRecordedIcal = function(res) {
           summary: reserve.fullTitle,
           description: reserve.detail,
           location: reserve.channel.name,
-          url: process.env.CHINACHU_HOST + '/#!/program/view/id=' + reserve.id
+          url: process.env.CHINACHU_WUI_HOST + '/#!/program/view/id=' + reserve.id
         });
       });
       cal.serve(res);
