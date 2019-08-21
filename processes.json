@@ -1,0 +1,9 @@
+{
+  "apps": [
+    {
+      "name": "chinachu-ical",
+      "script": "./index.js",
+      "autorestart": true
+    }
+  ]
+}
