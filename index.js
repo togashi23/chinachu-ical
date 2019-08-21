@@ -77,6 +77,6 @@ http
         res.end('Not found.');
     }
   })
-  .listen(process.env.LISTEN_PORT, function() {
+  .listen(LISTEN_PORT, function() {
     console.log('Server running.');
   });
