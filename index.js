@@ -17,6 +17,7 @@ const createReservesIcal = function(res) {
     .getReserves()
     .then(reserves => {
       reserves.data.forEach(reserve => {
+        if (reserve.isSkip === true) return;
         cal.createEvent({
           start: moment(reserve.start),
           end: moment(reserve.end),
